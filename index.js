@@ -2,26 +2,37 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
-const { mongoURI, cookieKey } = require("./config/keys");
-// model defined here - must come above require passport where a new user is set.
+const bodyParser = require("body-parser");
+const keys = require("./config/keys");
 require("./models/User");
 require("./services/passport");
 
-mongoose.connect(mongoURI);
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 
+app.use(bodyParser.json());
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [cookieKey],
+    keys: [keys.cookieKey],
   })
 );
-
 app.use(passport.initialize());
 app.use(passport.session());
 
 require("./routes/authRoutes")(app);
+require("./routes/billingRoutes")(app);
+
+if (process.env.NODE_ENV === "production") {
+  // Express will serve up prod assets
+  app.use(express.static("client/build"));
+  // If above resource not found then: Express serve up index.html if doesn't recognise route.(i.e. React routing)
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
