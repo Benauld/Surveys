@@ -6,4 +6,4 @@ const recipientSchema = new Schema({
   responded: { type: Boolean, default: false },
 });
 // sub-schema of Survey so no need to register in Mongoos model
-module.export = recipientSchema;
+module.exports = recipientSchema;

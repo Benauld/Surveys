@@ -1,0 +1,62 @@
+{
+  "Waldportfolio": {
+    "Name": "Waldportfolio",
+    "Geschäft": "Econos",
+    "Produkttyp": "Wald",
+    "GeografischerFokus": "International",
+    "Laufzeit": "8 Jahre mit Option auf Verlängerung um maximal 2 Jahre",
+    "Zielrendite": "2-4% p.a. nach Kosten",
+    "Ausschüttung": "jährlich",
+    "Emissionsvolumen": "990.000 EUR",
+    "Mindestinvestitionsvolumen": "5.000 EUR",
+    "Beschreibung": "Ein Investment in Wald gilt als besonders wertstabile Geldanlage. Viele professionelle Investor*innen halten seit Jahrzehnten einen Anteil ihres Portfolios in Form von Wäldern. Durch dieses mittelbare Investment in mehrere Wälder in Europa und Nordamerika können auch Privatpersonen ihr Portfolio diversifizieren."
+  },
+  "Solar England": {
+    "Name": "Solar England",
+    "Geschäft": "Econos",
+    "Produkttyp": "Solar",
+    "GeografischerFokus": "England",
+    "Laufzeit": "2 Jahre, kann um maximal ein Jahr verlängert werden",
+    "Zielrendite": "6% feste Verzinsung p.a.",
+    "Ausschüttung": "jährlich",
+    "Emissionsvolumen": "950.000 EUR",
+    "Mindestinvestitionsvolumen": "5.000 EUR",
+    "Beschreibung": "Dieses Investment finanziert mittelbar Boom Power, einen erfahrenen Projektentwickler für erneuerbare Energien. Boom Power besitzt ein breites Portfolio an Solar- und Batteriespeicheranlagen, und spielt damit eine wichtige Rolle beim Ausbau einer nachhaltigen Infrastruktur in Großbritannien."
+  },
+  "World Fund": {
+    "Name": "World Fund",
+    "Geschäft": "Econos",
+    "Produkttyp": "Start-ups",
+    "GeografischerFokus": "Europa",
+    "Laufzeit": "10 Jahre, mit Option auf Verlängerung um maximal zwei Jahre",
+    "Zielrendite": "über 10% p.a.",
+    "Ausschüttung": "endfällig",
+    "Emissionsvolumen": "2.350.000 EUR",
+    "Mindestinvestitionsvolumen": "5.000 EUR",
+    "Beschreibung": "Der World Fund begleitet Start-ups über die Frühphase hinaus in die Wachstumsphase. Der Fokus des Fonds liegt auf europäischen Unternehmen mit dem Potential, eine große Menge an Kohlendioxid- und Treibhausgas-Emissionen einzusparen und daher attraktive Wachstumschancen aufweisen."
+  },
+  "Planet A": {
+    "Name": "Planet A",
+    "Geschäft": "Econos",
+    "Produkttyp": "Start-ups",
+    "GeografischerFokus": "DACH-Region",
+    "Laufzeit": "10 Jahre, mit Option auf Verlängerung um maximal zwei Jahre",
+    "Zielrendite": "über 10% p.a.",
+    "Ausschüttung": "endfällig",
+    "Emissionsvolumen": "2.350.000 EUR",
+    "Mindestinvestitionsvolumen": "5.000 EUR",
+    "Beschreibung": "Dieses Investment geschieht mittelbar in den Below One Fund von Planet A. Der Venture Capital Fonds investiert in junge Unternehmen, deren Technologien und Geschäftsmodelle finanziell attraktiv und gleichzeitig nachhaltig sind. Planet A begleitet die Unternehmen in der Frühphase und fokussiert sich dabei auf die DACH-Region (Deutschland, Österreich und die Schweiz)."
+  },
+  "Solar Australien": {
+    "Name": "Solar Australien",
+    "Geschäft": "Econos",
+    "Produkttyp": "Solar",
+    "GeografischerFokus": "Australien",
+    "Laufzeit": "3 Jahre",
+    "Zielrendite": "10% feste Verzinsung p.a.",
+    "Ausschüttung": "endfällig",
+    "Emissionsvolumen": "990.000 EUR",
+    "Mindestinvestitionsvolumen": "50.000 EUR",
+    "Beschreibung": "Dieses Investment finanziert mittelbar den erfahrenen Projektentwickler ACE Power. Solar-, Batteriespeicher- und Windanlagen in Australien zählen zu den diversen Projekten von ACE Power. Dadurch leistet ACE Power einen Beitrag zur Energiewende in Australien."
+  }
+}

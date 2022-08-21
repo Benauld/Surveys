@@ -25,9 +25,9 @@ class SurveyList extends Component {
     });
   }
   render() {
-    //return <div>{this.renderSurveys()}</div>;
-    console.log(this.props);
-    return <div>Survey List</div>;
+    return <div>{this.renderSurveys()}</div>;
+    //console.log(this.props);
+    //return <div>Survey List</div>;
   }
 }
 function mapStateToProps({ surveys }) {
