@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import StripePayments from "./StripePayments";
 
 class Header extends Component {
   renderContent() {
@@ -10,20 +9,32 @@ class Header extends Component {
         return;
       case false:
         return (
-          <li>
-            <a href="/auth/google">Login with Google</a>
+          <li key="4">
+            <a href="/login" className="green-text text-darken-4">
+              <i className="material-icons left">block</i>
+              <span className="hide-on-small-only">Login / Signup</span>
+            </a>
           </li>
         );
       default:
         return [
-          <li key="1">
-            <StripePayments />
-          </li>,
           <li key="2" style={{ margin: "0 10px" }}>
-            Credits: {this.props.auth.credits}
+            <a href="/dashboard" className="green-text text-darken-4">
+              <i className="material-icons left">assessment</i>
+              <span className="hide-on-med-and-down">Dashboard</span>
+            </a>
           </li>,
-          <li key="3">
-            <a href="api/logout"> Logout {this.props.auth.name}</a>
+          <li key="3" style={{ margin: "0 10px" }}>
+            <a href="/dashboard" className="green-text text-darken-4">
+              <i className="material-icons left">folder_shared</i>
+              <span className="hide-on-med-and-down">Kunden</span>
+            </a>
+          </li>,
+          <li key="4">
+            <a href="api/logout" className="green-text text-darken-4">
+              <i className="material-icons left">face</i>
+              <span className="hide-on-small-only">Logout</span>
+            </a>
           </li>,
         ];
     }
@@ -31,15 +42,24 @@ class Header extends Component {
   render() {
     return (
       <nav>
-        <div className="nav-wrapper blue lighten-2">
+        <div className="nav-wrapper green lighten-5">
           <Link
-            to={this.props.auth ? "/surveys" : "/"}
-            className="left brand-logo"
+            to={this.props.auth ? "/market" : "/"}
+            className="left brand-logo green-text text-darken-4"
           >
-            Emaily
+            <i className="material-icons">gamepad</i>
+            WealthNavi
           </Link>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-            {this.renderContent()}
+          <ul id="nav-mobile" className="right">
+            <li key="1" style={{ margin: "0 10px" }}>
+              <a href="/market" className="green-text text-darken-4">
+                <i className="material-icons left green-text text-darken-4">
+                  view_module
+                </i>
+                <span className="hide-on-med-and-down">Marktplatz</span>
+              </a>
+            </li>
+            ,{this.renderContent()}
           </ul>
         </div>
       </nav>
