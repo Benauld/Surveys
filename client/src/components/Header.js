@@ -25,7 +25,7 @@ class Header extends Component {
             </a>
           </li>,
           <li key="3" style={{ margin: "0 10px" }}>
-            <a href="/dashboard" className="green-text text-darken-4">
+            <a href="/kunden" className="green-text text-darken-4">
               <i className="material-icons left">folder_shared</i>
               <span className="hide-on-med-and-down">Kunden</span>
             </a>

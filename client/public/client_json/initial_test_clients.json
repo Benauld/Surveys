@@ -1,0 +1,26 @@
+{
+  "Ben": {
+    "title": "Mr",
+    "forname": "Ben",
+    "middlename": "",
+    "surname": "Auld",
+    "image": "BenAuld.jpeg",
+    "email": "ben.auld@wealthnavi.de",
+    "status": "Regestriert",
+    "advisor": "",
+    "dateCreated": 20220906,
+    "lastUpdated": 20220906
+  },
+  "Philipp": {
+    "title": "Herr",
+    "forname": "Philipp",
+    "middlename": "",
+    "surname": "Hemmersbach",
+    "image": "PhilippHemmersbach.jpeg",
+    "email": "philipp.Hemmersbach@wealthnavi.de",
+    "status": "Activ",
+    "advisor": "",
+    "dateCreated": 20220906,
+    "lastUpdated": 20220906
+  }
+}

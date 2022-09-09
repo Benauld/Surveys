@@ -1,0 +1,78 @@
+{
+  "GreenTech A Token": {
+    "Name": "GreenTech A",
+    "Geschäft": "inVenture",
+    "Produkttyp": "Digitales Wertpapier",
+    "Zielfund": "Below One Fund I",
+    "Fokus": "Green Tech",
+    "Produkttyp": "Wald",
+    "Stage": "Early",
+    "image": "inVenture_Waldportfolio.png",
+    "image2": "",
+    "Geografischer Fokus": "International",
+    "Laufzeit": "10 Jahre",
+    "Zielrendite": "3,2x nach Kosten und Gebühren",
+    "Fundingschwelle": "200.000 EUR",
+    "Emissionsvolumen": "2.000.000 EUR",
+    "Mindestinvestitionsvolumen": "250 EUR",
+    "Emmissionsende": "31.10.2022",
+    "Beschreibung": "Über den GreenTech A Token beteiligst Du Dich mittelbar an bis zu 30 Start-ups des GreenTech Fonds Planet A Ventures."
+  },
+
+  "Net Zero Token": {
+    "Name": "Net zero",
+    "Geschäft": "inVenture",
+    "Produkttyp": "Digitales Wertpapier",
+    "Zielfund": "Climentum Capital Fund I",
+    "Fokus": "Climate Tech",
+    "Stage": "Early",
+    "image": "inVenture_Sea.png",
+    "image2": "",
+    "Geografischer Fokus": "International",
+    "Laufzeit": "10 Jahre",
+    "Zielrendite": "2,8x nach Kosten und Gebühren",
+    "Fundingschwelle": "200.000 EUR",
+    "Emissionsvolumen": "990.000 EUR",
+    "Mindestinvestitionsvolumen": "250 EUR",
+    "Emmissionsende": "31.03.2023",
+    "Beschreibung": "Über den Net Zero Token investierst Du mittelbar in den Climate Tech Venture Capital Fonds von Climentum Capital."
+  },
+
+  "Endurance Token": {
+    "Name": "Endurance Token",
+    "Geschäft": "inVenture",
+    "Produkttyp": "Digitales Wertpapier",
+    "Zielfund": "STS Co-Investment Fund IV",
+    "Fokus": "Technologie",
+    "Stage": "Early",
+    "image": "inVenture_Yellow.png",
+    "image2": "",
+    "Geografischer Fokus": "International",
+    "Laufzeit": "11 Jahre",
+    "Zielrendite": "2,4x nach Kosten und Gebühren",
+    "Fundingschwelle": "200.000 EUR",
+    "Emissionsvolumen": "990.000 EUR",
+    "Mindestinvestitionsvolumen": "250 EUR",
+    "Emmissionsende": "31.07.2023",
+    "Beschreibung": "Über den Endurance Token beteiligst Du Dich mittelbar an einem Portfolio aus Start-ups mit Hidden Champion Potenzial."
+  },
+
+  "Growth Tech Token": {
+    "Name": "Growth Tech Token",
+    "Geschäft": "inVenture",
+    "Produkttyp": "Digitales Wertpapier",
+    "Zielfund": "Cadence Growth Capital I",
+    "Fokus": "Technologie",
+    "Stage": "Early",
+    "image": "Growth_Tech_Token.png",
+    "image2": "",
+    "Geografischer Fokus": "International",
+    "Laufzeit": "8 Jahre",
+    "Zielrendite": ">2,0x nach Kosten und Gebühren",
+    "Fundingschwelle": "200.000 EUR",
+    "Emissionsvolumen": "999.999 EUR",
+    "Mindestinvestitionsvolumen": "250 EUR",
+    "Emmissionsende": "06.05.2022",
+    "Beschreibung": "Über den Growth Tech Token beteiligst Du Dich mittelbar an bis zu 10 technologiegetriebenen Wachstumsunternehmen des Growth Fonds Cadence Growth Capital."
+  }
+}

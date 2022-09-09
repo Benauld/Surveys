@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { fetchProducts } from "../../actions";
 
 class ProductList extends Component {
@@ -23,26 +24,53 @@ class ProductList extends Component {
     return;
   }
 
-  renderProducts() {
-    return this.props.products.reverse().map((product) => {
-      const image = window.location.origin + "/images/" + product.image;
+  renderCardHeader(Status) {
+    if (Status === "Offen") {
       return (
-        <div>
+        <div className="green lighten-5">
+          <h5 className="center">{Status}</h5>
+        </div>
+      );
+    }
+    return (
+      <div className="grey lighten-3">
+        <h5 className="center">{Status}</h5>
+      </div>
+    );
+  }
+
+  renderProducts() {
+    console.log("renderProd", this.props);
+    return this.props.products.reverse().map((product) => {
+      const image =
+        window.location.origin + "/images/products/" + product.image;
+      return (
+        <div key={product.Name}>
           {this.renderSection(product)}
           <div className="col s12 m6 l3">
             <div className="card">
-              <div className="card-image">
-                <img className="responsive-img" src={image} />
+              <div>{this.renderCardHeader(product.Status)}</div>
+              <div className="card-image" style={{ minHeight: "125px" }}>
+                <img
+                  className="responsive-img"
+                  src={image}
+                  alt={product.Name}
+                />
                 <span className="card-title">{product.Name}</span>
               </div>
-              <div className="card-content" style={{ minHeight: "240px" }}>
-                <p>Laufzeit: {product.Laufzeit}</p>
-                <p>Zielrendits: {product.Zielrendite}</p>
+              <div className="card-content">
                 <p>Volumen: {product.Emissionsvolumen}</p>
                 <p>Mindest: {product.Mindestinvestitionsvolumen}</p>
+                <p>Zielrendits:</p>
+                <p>{product.Zielrendite}</p>
               </div>
               <div className="card-action">
-                <a href="#">This is a link</a>
+                <Link
+                  to={`/market/${product._id}`}
+                  className="ui button primary"
+                >
+                  Zum Asset
+                </Link>
               </div>
             </div>
           </div>
@@ -52,11 +80,10 @@ class ProductList extends Component {
   }
   render() {
     return <div>{this.renderProducts()}</div>;
-    //console.log(this.props);
-    //return <div>Survey List</div>;
   }
 }
 function mapStateToProps({ products }) {
+  console.log("mapstate", products);
   return { products };
 }
 export default connect(mapStateToProps, { fetchProducts })(ProductList);
