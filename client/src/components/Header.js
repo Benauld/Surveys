@@ -48,7 +48,7 @@ class Header extends Component {
             className="left brand-logo green-text text-darken-4"
           >
             <i className="material-icons">gamepad</i>
-            WealthNavi
+            X-ALTd Assets
           </Link>
           <ul id="nav-mobile" className="right">
             <li key="1" style={{ margin: "0 10px" }}>

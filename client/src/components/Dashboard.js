@@ -1,18 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import SurveyList from "./surveys/SurveyList";
+import ClientPortfolio from "./clients/ClientPortfolio";
 
 const Dashboard = () => {
   return (
     <div>
-      <SurveyList />
-      <div className="fixed-action-btn">
-        <Link
-          to="/surveys/new"
-          className="btn-floating waves-effect waves-light btn-large blue"
-        >
-          <i className="material-icons">add</i>
-        </Link>
+      <div className="row">
+        <ClientPortfolio />
       </div>
     </div>
   );

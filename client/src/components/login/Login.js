@@ -19,11 +19,15 @@ const Login = () => {
         </div>
       </div>
       <div>
-        <li>
+        <div className="row">
+          <button className="waves-effect waves-light btn green">Login</button>
+          <div className="row"></div>
           <a href="/auth/google">
-            <button>Login with Google</button>
+            <button className="waves-effect waves-light btn blue">
+              Login with Google
+            </button>
           </a>
-        </li>
+        </div>
       </div>
     </div>
   );
