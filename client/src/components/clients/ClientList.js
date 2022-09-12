@@ -69,13 +69,18 @@ class ClientList extends Component {
     return (
       <div>
         <div>{this.renderClients()}</div>
-        <div className="container fixed-action-btn">
-          <Link
-            to="/kunden/new"
-            className="btn-floating waves-effect waves-light btn-large green darken-4"
-          >
-            <i className="material-icons">add</i>
-          </Link>
+        <div clasName="row">
+          <div className="fixed-action-btn">
+            <h5 className="center green-text text-darken-4">
+              Kunde hinzufügen:{" "}
+            </h5>
+            <Link
+              to="/kunden/new"
+              className="btn-floating waves-effect waves-light btn-large green darken-4 right"
+            >
+              <i className="material-icons right">add</i>
+            </Link>
+          </div>
         </div>
       </div>
     );
