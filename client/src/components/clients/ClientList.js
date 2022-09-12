@@ -9,10 +9,10 @@ class ClientList extends Component {
   }
 
   renderCardHeader(status) {
-    if (status === "Activ") {
+    if (status === "Aktiv") {
       return (
-        <div className="green lighten-5">
-          <h5 className="center">{status}</h5>
+        <div className="green darken-4">
+          <h5 className="center green-text text-lighten-5">{status}</h5>
         </div>
       );
     }
@@ -41,15 +41,23 @@ class ClientList extends Component {
               </div>
               <div className="card-content">
                 <h5>
-                  Familien: <span>{client.surname}</span>
+                  Nachname: <span>{client.surname}</span>
                 </h5>
-                <p>Vorname: {client.forname}</p>
+                <div style={{ borderTop: "2px solid #6B5 " }}></div>
+                <h5>Vorname: {client.forname}</h5>
+                <div style={{ borderTop: "2px solid #6B5 " }}></div>
+                <br></br>
                 <Link
                   to={`mailto:${client.email}`}
                   className="ui button primary"
                 >
                   {client.email}
                 </Link>
+                <div className="card-action">
+                  <Link to={`/dashboard`} className="ui button primary">
+                    Zum Dashboard
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -64,7 +72,7 @@ class ClientList extends Component {
         <div className="container fixed-action-btn">
           <Link
             to="/kunden/new"
-            className="btn-floating waves-effect waves-light btn-large green"
+            className="btn-floating waves-effect waves-light btn-large green darken-4"
           >
             <i className="material-icons">add</i>
           </Link>

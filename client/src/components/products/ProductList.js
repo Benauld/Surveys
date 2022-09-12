@@ -27,8 +27,8 @@ class ProductList extends Component {
   renderCardHeader(Status) {
     if (Status === "Offen") {
       return (
-        <div className="green lighten-5">
-          <h5 className="center">{Status}</h5>
+        <div className="green darken-4">
+          <h5 className="center green-text text-lighten-5">{Status}</h5>
         </div>
       );
     }

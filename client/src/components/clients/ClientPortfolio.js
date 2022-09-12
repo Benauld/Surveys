@@ -9,10 +9,10 @@ class ClientPortfolio extends Component {
   }
 
   renderCardHeader(status) {
-    if (status === "Activ") {
+    if (status === "Aktiv") {
       return (
-        <div className="green lighten-5">
-          <h5 className="center">{status}</h5>
+        <div className="green darken-4">
+          <h5 className="center green-text text-lighten-5">{status}</h5>
         </div>
       );
     }
@@ -44,9 +44,12 @@ class ClientPortfolio extends Component {
                 </div>
                 <div className="card-content">
                   <h5>
-                    Familien: <span>{client.surname}</span>
+                    Nachname: <span>{client.surname}</span>
                   </h5>
-                  <p>Vorname: {client.forname}</p>
+                  <div style={{ borderTop: "2px solid #6B5 " }}></div>
+                  <h5>Vorname: {client.forname}</h5>
+                  <div style={{ borderTop: "2px solid #6B5 " }}></div>
+                  <br></br>
                   <Link
                     to={`mailto:${client.email}`}
                     className="ui button primary"
@@ -66,169 +69,177 @@ class ClientPortfolio extends Component {
       window.location.origin + "/images/clients/investmentarget.jpg";
     return (
       <div>
-        <div className="right">
-          <div className="image">
-            <img
-              className="responsive-img"
-              src={investTarget}
-              alt={"investment target"}
-            />
-            <div>
-              <h5> </h5>
-              <h5 className="right">Target Platform Allocated: €150.000,00</h5>
-              <br></br>
-              <h5 className="right">Current Total Allocated : €120.000,00</h5>
+        <div key="investment proportion">
+          <div className="col s12 m6 l4">
+            <div className="card">
+              <div className="green darken-4">
+                <h5 className="center green-text text-lighten-5">Investiert</h5>
+              </div>
+              <div className="card-image" style={{ minHeight: "125px" }}>
+                <img
+                  className="responsive-img"
+                  src={investTarget}
+                  alt={"investment target"}
+                />
+              </div>
+              <div className="card-content">
+                <h5>Zu allokierendes Vermögen: €150.000,00</h5>
+                <div style={{ borderTop: "2px solid #6B5 " }}></div>
+                <h5>Bereits allokiertes Vermögen : €120.000,00</h5>
+              </div>
             </div>
           </div>
         </div>
-        <table className="responsive-table striped">
-          <thead>
-            <tr>
-              <th>Investment</th>
-              <th>Platform</th>
-              <th>Purchase Amount</th>
-              <th>Units</th>
-              <th>Investment Date</th>
-              <th>Status</th>
-            </tr>
-          </thead>
+        <div className="container centre">
+          <table className="responsive-table striped">
+            <thead>
+              <tr>
+                <th>Investment</th>
+                <th>Plattform</th>
+                <th>Investmentvolumen</th>
+                <th>Anzahl</th>
+                <th>Investment Datum</th>
+                <th>Status</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>Cadence Growth Capital</td>
-              <td>inVenture</td>
-              <td>€10.000</td>
-              <td></td>
-              <td></td>
-              <td>Recommended</td>
-              <td>
-                <button className="waves-effect waves-light btn">
-                  Details
-                </button>
-              </td>
-              <td>
-                <button className="waves-effect waves-light btn red">
-                  Buy
-                  <i className="material-icons right">send</i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>Planet A</td>
-              <td>inVenture</td>
-              <td>€10.000</td>
-              <td></td>
-              <td></td>
-              <td>Recommended</td>
-              <td>
-                <button className="waves-effect waves-light btn">
-                  Details
-                </button>
-              </td>
-              <td>
-                <button className="waves-effect waves-light btn red">
-                  Buy
-                  <i className="material-icons right">send</i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>Solar Australien</td>
-              <td>Econos</td>
-              <td>€50.000</td>
-              <td>50</td>
-              <td>07/28/2021</td>
-              <td>Allocated</td>
-              <td>
-                <button className="waves-effect waves-light btn">
-                  Details
-                </button>
-              </td>
-              <td>
-                <button className="waves-effect waves-light btn amber">
-                  Sell
-                  <i className="material-icons right">send</i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>Solar England</td>
-              <td>Econos</td>
-              <td>€20.000</td>
-              <td>20</td>
-              <td>07/28/2021</td>
-              <td>Allocated</td>
-              <td>
-                <button className="waves-effect waves-light btn">
-                  Details
-                </button>
-              </td>
-              <td>
-                <button className="waves-effect waves-light btn amber">
-                  Sell
-                  <i className="material-icons right">send</i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>„Never Feel“ – The Currency</td>
-              <td>ArtTrade</td>
-              <td>€20.000</td>
-              <td>80</td>
-              <td>06/25/2021</td>
-              <td>Allocated</td>
-              <td>
-                <button className="waves-effect waves-light btn">
-                  Details
-                </button>
-              </td>
-              <td>
-                <button className="waves-effect waves-light btn amber">
-                  Sell
-                  <i className="material-icons right">send</i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>Grey</td>
-              <td>ArtTrade</td>
-              <td>€20.000</td>
-              <td>80</td>
-              <td>06/25/2021</td>
-              <td>Allocated</td>
-              <td>
-                <button className="waves-effect waves-light btn">
-                  Details
-                </button>
-              </td>
-              <td>
-                <button className="waves-effect waves-light btn amber">
-                  Sell
-                  <i className="material-icons right">send</i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>Untitled 19.VIII.06 (Ralph, Remix)</td>
-              <td>ArtTrade</td>
-              <td>€10.000</td>
-              <td>40</td>
-              <td>03/08/2021</td>
-              <td>Allocated</td>
-              <td>
-                <button className="waves-effect waves-light btn">
-                  Details
-                </button>
-              </td>
-              <td>
-                <button className="waves-effect waves-light btn amber">
-                  Sell
-                  <i className="material-icons right">send</i>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+            <tbody>
+              <tr>
+                <td>Cadence Growth Capital</td>
+                <td>inVenture</td>
+                <td>€10.000</td>
+                <td></td>
+                <td></td>
+                <td>Empfohlen</td>
+                <td>
+                  <button className="waves-effect waves-light green darken-4 btn">
+                    Details
+                  </button>
+                </td>
+                <td>
+                  <button className="waves-effect waves-light btn red">
+                    Kaufen
+                    <i className="material-icons right">send</i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Planet A</td>
+                <td>inVenture</td>
+                <td>€10.000</td>
+                <td></td>
+                <td></td>
+                <td>Empfohlen</td>
+                <td>
+                  <button className="waves-effect waves-light green darken-4 btn">
+                    Details
+                  </button>
+                </td>
+                <td>
+                  <button className="waves-effect waves-light btn red">
+                    Kaufen
+                    <i className="material-icons right">send</i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Solar Australien</td>
+                <td>Econos</td>
+                <td>€50.000</td>
+                <td>50</td>
+                <td>07/28/2021</td>
+                <td>Investiert</td>
+                <td>
+                  <button className="waves-effect waves-light green darken-4 btn">
+                    Details
+                  </button>
+                </td>
+                <td>
+                  <button className="waves-effect waves-light btn amber">
+                    Verkaufen
+                    <i className="material-icons right">send</i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Solar England</td>
+                <td>Econos</td>
+                <td>€20.000</td>
+                <td>20</td>
+                <td>07/28/2021</td>
+                <td>Investiert</td>
+                <td>
+                  <button className="waves-effect waves-light green darken-4 btn">
+                    Details
+                  </button>
+                </td>
+                <td>
+                  <button className="waves-effect waves-light btn amber">
+                    Verkaufen
+                    <i className="material-icons right">send</i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>„Never Feel“ – The Currency</td>
+                <td>ArtTrade</td>
+                <td>€20.000</td>
+                <td>80</td>
+                <td>06/25/2021</td>
+                <td>Investiert</td>
+                <td>
+                  <button className="waves-effect waves-light green darken-4 btn">
+                    Details
+                  </button>
+                </td>
+                <td>
+                  <button className="waves-effect waves-light btn amber">
+                    Verkaufen
+                    <i className="material-icons right">send</i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Grey</td>
+                <td>ArtTrade</td>
+                <td>€20.000</td>
+                <td>80</td>
+                <td>06/25/2021</td>
+                <td>Investiert</td>
+                <td>
+                  <button className="waves-effect waves-light green darken-4 btn">
+                    Details
+                  </button>
+                </td>
+                <td>
+                  <button className="waves-effect waves-light btn amber">
+                    Verkaufen
+                    <i className="material-icons right">send</i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Untitled 19.VIII.06 (Ralph, Remix)</td>
+                <td>ArtTrade</td>
+                <td>€10.000</td>
+                <td>40</td>
+                <td>03/08/2021</td>
+                <td>Investiert</td>
+                <td>
+                  <button className="waves-effect waves-light green darken-4 btn">
+                    Details
+                  </button>
+                </td>
+                <td>
+                  <button className="waves-effect waves-light btn amber">
+                    Verkaufen
+                    <i className="material-icons right">send</i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
