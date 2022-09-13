@@ -15,7 +15,7 @@ const Login = () => {
           <img
             className="responsive-img center"
             style={{ width: "250px" }}
-            src={`${window.location.origin}/images/Original_long.png`}
+            src={`${window.location.origin}/images/Logo_Black_Transparent.png`}
             alt="X-altd"
           />
         </div>
@@ -60,7 +60,7 @@ const Login = () => {
                     className="waves-effect waves-light btn green darken-4"
                     style={{ width: "196px" }}
                   >
-                    Login
+                    Einloggen
                   </button>
                 </div>
               </form>

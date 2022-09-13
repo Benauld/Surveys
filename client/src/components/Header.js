@@ -12,7 +12,7 @@ class Header extends Component {
           <li key="4">
             <a href="/login" className="green-text text-lighten-5">
               <i className="material-icons left">block</i>
-              <span className="hide-on-small-only">Login / Signup</span>
+              <span className="hide-on-small-only">Einloggen</span>
             </a>
           </li>
         );
@@ -33,7 +33,7 @@ class Header extends Component {
           <li key="4">
             <a href="api/logout" className="green-text text-lighten-5">
               <i className="material-icons left">face</i>
-              <span className="hide-on-small-only">Logout</span>
+              <span className="hide-on-small-only">Ausloggen</span>
             </a>
           </li>,
         ];
