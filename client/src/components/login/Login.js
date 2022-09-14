@@ -57,7 +57,7 @@ const Login = () => {
                 </div>
                 <div className="row">
                   <button
-                    className="waves-effect waves-light btn green darken-4"
+                    className="waves-effect waves-light btn teal darken-4"
                     style={{ width: "196px" }}
                   >
                     Einloggen

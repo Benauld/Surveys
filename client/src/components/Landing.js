@@ -3,7 +3,7 @@ import React from "react";
 const Landing = () => {
   return (
     <div>
-      <div className="section green darken-4">
+      <div className="section teal darken-4">
         <div className="row valign-wrapper">
           <div className="col s12 m6 l6 green-text text-lighten-5">
             <h1 className="center-align">X-altd Assets</h1>
@@ -78,7 +78,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="section green darken-4">
+      <div className="section teal darken-4">
         <div
           className="row container"
           style={{ minHeight: "400px", width: "100%" }}

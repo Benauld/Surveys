@@ -11,7 +11,7 @@ class ClientPortfolio extends Component {
   renderCardHeader(status) {
     if (status === "Aktiv") {
       return (
-        <div className="green darken-4">
+        <div className="teal darken-4">
           <h5 className="center green-text text-lighten-5">{status}</h5>
         </div>
       );
@@ -72,7 +72,7 @@ class ClientPortfolio extends Component {
         <div key="investment proportion">
           <div className="col s12 m6 l4">
             <div className="card">
-              <div className="green darken-4">
+              <div className="teal darken-4">
                 <h5 className="center green-text text-lighten-5">Investiert</h5>
               </div>
               <div className="card-image" style={{ minHeight: "125px" }}>
@@ -114,7 +114,7 @@ class ClientPortfolio extends Component {
                 <td>Empfohlen</td>
                 <td>
                   <button className="waves-effect waves-light green darken-4 btn">
-                    Details
+                    Einzelheiten
                   </button>
                 </td>
                 <td>
@@ -133,7 +133,7 @@ class ClientPortfolio extends Component {
                 <td>Empfohlen</td>
                 <td>
                   <button className="waves-effect waves-light green darken-4 btn">
-                    Details
+                    Einzelheiten
                   </button>
                 </td>
                 <td>
@@ -152,7 +152,7 @@ class ClientPortfolio extends Component {
                 <td>Investiert</td>
                 <td>
                   <button className="waves-effect waves-light green darken-4 btn">
-                    Details
+                    Einzelheiten
                   </button>
                 </td>
                 <td>
@@ -171,7 +171,7 @@ class ClientPortfolio extends Component {
                 <td>Investiert</td>
                 <td>
                   <button className="waves-effect waves-light green darken-4 btn">
-                    Details
+                    Einzelheiten
                   </button>
                 </td>
                 <td>
@@ -190,7 +190,7 @@ class ClientPortfolio extends Component {
                 <td>Investiert</td>
                 <td>
                   <button className="waves-effect waves-light green darken-4 btn">
-                    Details
+                    Einzelheiten
                   </button>
                 </td>
                 <td>
@@ -209,7 +209,7 @@ class ClientPortfolio extends Component {
                 <td>Investiert</td>
                 <td>
                   <button className="waves-effect waves-light green darken-4 btn">
-                    Details
+                    Einzelheiten
                   </button>
                 </td>
                 <td>
@@ -228,7 +228,7 @@ class ClientPortfolio extends Component {
                 <td>Investiert</td>
                 <td>
                   <button className="waves-effect waves-light green darken-4 btn">
-                    Details
+                    Einzelheiten
                   </button>
                 </td>
                 <td>

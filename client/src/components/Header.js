@@ -42,7 +42,7 @@ class Header extends Component {
   render() {
     return (
       <nav>
-        <div className="nav-wrapper green darken-4">
+        <div className="nav-wrapper teal darken-4">
           <Link
             to={this.props.auth ? "/market" : "/"}
             className="left brand-logo green-text text-lighten-5"

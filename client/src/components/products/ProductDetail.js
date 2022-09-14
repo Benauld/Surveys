@@ -15,8 +15,8 @@ class ProductDetail extends Component {
     return (
       <div key={product.Name}>
         <div className="col s12 m6 l3">
-          <div className="green lighten-4">
-            <h1 className="center">{product.Name}</h1>
+          <div className="teal darken-4">
+            <h1 className="center white-text">{product.Name}</h1>
           </div>
           <div className="row">
             <div className="col s12 m8 l6">
@@ -74,7 +74,7 @@ class ProductDetail extends Component {
                 <br></br>
                 <button
                   type="submit"
-                  className="teal btn-flat right white-text"
+                  className="teal darken-4 btn-flat right white-text"
                 >
                   Einreichen
                   <i className="material-icons right">done</i>

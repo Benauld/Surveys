@@ -11,7 +11,7 @@ class ClientList extends Component {
   renderCardHeader(status) {
     if (status === "Aktiv") {
       return (
-        <div className="green darken-4">
+        <div className="teal darken-4">
           <h5 className="center green-text text-lighten-5">{status}</h5>
         </div>
       );
