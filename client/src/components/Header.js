@@ -63,7 +63,7 @@ class Header extends Component {
                 <span className="hide-on-med-and-down">Marktplatz</span>
               </a>
             </li>
-            ,{this.renderContent()}
+            {this.renderContent()}
           </ul>
         </div>
       </nav>

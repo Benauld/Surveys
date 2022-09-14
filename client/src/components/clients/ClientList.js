@@ -69,7 +69,7 @@ class ClientList extends Component {
     return (
       <div>
         <div>{this.renderClients()}</div>
-        <div clasName="row">
+        <div className="row">
           <div className="fixed-action-btn">
             <h5 className="center green-text text-darken-4">
               Kunde hinzufügen:{" "}

@@ -40,7 +40,6 @@ class ProductList extends Component {
   }
 
   renderProducts() {
-    console.log("renderProd", this.props);
     return this.props.products.reverse().map((product) => {
       const image =
         window.location.origin + "/images/products/" + product.image;
@@ -83,7 +82,6 @@ class ProductList extends Component {
   }
 }
 function mapStateToProps({ products }) {
-  console.log("mapstate", products);
   return { products };
 }
 export default connect(mapStateToProps, { fetchProducts })(ProductList);

@@ -66,7 +66,7 @@ class ClientPortfolio extends Component {
   }
   renderPortfolio() {
     const investTarget =
-      window.location.origin + "/images/clients/investmentarget.jpg";
+      window.location.origin + "/images/clients/allocatedRing.jpg";
     return (
       <div>
         <div key="investment proportion">
@@ -78,6 +78,7 @@ class ClientPortfolio extends Component {
               <div className="card-image" style={{ minHeight: "125px" }}>
                 <img
                   className="responsive-img"
+                  style={{ maxWidth: "88%" }}
                   src={investTarget}
                   alt={"investment target"}
                 />
