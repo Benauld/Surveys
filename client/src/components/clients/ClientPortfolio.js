@@ -113,12 +113,12 @@ class ClientPortfolio extends Component {
                 <td></td>
                 <td>Empfohlen</td>
                 <td>
-                  <button className="waves-effect waves-light green darken-4 btn">
+                  <button className="waves-effect waves-light teal darken-2 btn">
                     Details
                   </button>
                 </td>
                 <td>
-                  <button className="waves-effect waves-light btn red">
+                  <button className="waves-effect waves-light btn cyan">
                     Kaufen
                     <i className="material-icons right">send</i>
                   </button>
@@ -132,12 +132,12 @@ class ClientPortfolio extends Component {
                 <td></td>
                 <td>Empfohlen</td>
                 <td>
-                  <button className="waves-effect waves-light green darken-4 btn">
+                  <button className="waves-effect waves-light teal darken-2 btn">
                     Details
                   </button>
                 </td>
                 <td>
-                  <button className="waves-effect waves-light btn red">
+                  <button className="waves-effect waves-light btn cyan">
                     Kaufen
                     <i className="material-icons right">send</i>
                   </button>
@@ -151,7 +151,7 @@ class ClientPortfolio extends Component {
                 <td>07/28/2021</td>
                 <td>Investiert</td>
                 <td>
-                  <button className="waves-effect waves-light green darken-4 btn">
+                  <button className="waves-effect waves-light teal darken-2 btn">
                     Details
                   </button>
                 </td>
@@ -170,7 +170,7 @@ class ClientPortfolio extends Component {
                 <td>07/28/2021</td>
                 <td>Investiert</td>
                 <td>
-                  <button className="waves-effect waves-light green darken-4 btn">
+                  <button className="waves-effect waves-light teal darken-2 btn">
                     Details
                   </button>
                 </td>
@@ -189,7 +189,7 @@ class ClientPortfolio extends Component {
                 <td>06/25/2021</td>
                 <td>Investiert</td>
                 <td>
-                  <button className="waves-effect waves-light green darken-4 btn">
+                  <button className="waves-effect waves-light teal darken-2 btn">
                     Details
                   </button>
                 </td>
@@ -208,7 +208,7 @@ class ClientPortfolio extends Component {
                 <td>06/25/2021</td>
                 <td>Investiert</td>
                 <td>
-                  <button className="waves-effect waves-light green darken-4 btn">
+                  <button className="waves-effect waves-light teal darken-2 btn">
                     Details
                   </button>
                 </td>
@@ -227,7 +227,7 @@ class ClientPortfolio extends Component {
                 <td>03/08/2021</td>
                 <td>Investiert</td>
                 <td>
-                  <button className="waves-effect waves-light green darken-4 btn">
+                  <button className="waves-effect waves-light teal darken-2 btn">
                     Details
                   </button>
                 </td>
