@@ -22,7 +22,6 @@ const Login = () => {
 
         <div style={{ textAlign: "center", flex: "1 0 auto" }}>
           <h5 className="indigo-text">Einloggen</h5>
-          <h4 className="red-text">Zurzeit nicht verfügbar</h4>
           <div className="section"></div>
           <div className="container">
             <div
@@ -51,14 +50,14 @@ const Login = () => {
                 </div>
                 <div className="row">
                   <label style={{ float: "right" }}>
-                    <a className="grey-text" href="#!">
+                    <a className="pink-text" href="#!">
                       <b>Passwort vergessen?</b>
                     </a>
                   </label>
                 </div>
                 <div className="row">
                   <button
-                    className="waves-effect waves-light btn grey"
+                    className="waves-effect waves-light btn teal darken-4"
                     style={{ width: "196px" }}
                   >
                     Einloggen
@@ -70,11 +69,8 @@ const Login = () => {
                   <button style={{ border: "none" }}>
                     <img
                       className="responsive-img center"
-                      style={{
-                        width: "200px",
-                        backgroundColor: "grey",
-                      }}
-                      src={`${window.location.origin}/Google_disabled.jpg`}
+                      style={{ width: "200px" }}
+                      src={`${window.location.origin}/btn_google.png`}
                       alt="Google login"
                     />
                   </button>
@@ -82,9 +78,7 @@ const Login = () => {
               </div>
             </div>
             <div className="row">
-              <a href="#!" className="grey-text">
-                Account registrieren
-              </a>
+              <a href="#!">Account registrieren</a>
             </div>
           </div>
         </div>
