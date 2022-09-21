@@ -40,7 +40,10 @@ const Landing = () => {
                 <div className="card-title center">
                   <h4>Produktzugang</h4>
                 </div>
-                <div className="card-content center">
+                <div
+                  className="card-content center"
+                  style={{ height: "150px" }}
+                >
                   Investieren Sie ab € 250 mit Ihren Kunden unmittelbar in
                   Privatmärkte
                 </div>
@@ -55,7 +58,10 @@ const Landing = () => {
                 <div className="card-title center">
                   <h4>Compliance </h4>
                 </div>
-                <div className="card-content center">
+                <div
+                  className="card-content center"
+                  style={{ height: "150px" }}
+                >
                   Profitieren Sie von einem digitalen, MidFID konformen
                   Zeichungsprozess
                 </div>
@@ -70,7 +76,10 @@ const Landing = () => {
                 <div className="card-title center">
                   <h4>Beratungseffizienz</h4>
                 </div>
-                <div className="card-content center">
+                <div
+                  className="card-content center"
+                  style={{ height: "150px" }}
+                >
                   Beraten Sie individuell durch unsere Produktvorauswahl
                 </div>
               </div>
@@ -86,7 +95,7 @@ const Landing = () => {
           <div className="valign-wrapper">
             <div className="green-text text-lighten-5">
               <h2 className="center-align">Über Uns</h2>
-              <h5 className="center-align">
+              <h5 className="center-align" style={{ textAlign: "justify" }}>
                 X-altd ist der digitale Marktplatz für Investments in
                 Privatmärkte für Vermögensverwaltungen und deren Kunden. Neben
                 einem digitalen, compliance sicheren Zeichnungsprozess hat sich
@@ -97,6 +106,117 @@ const Landing = () => {
                 Investieren in Privatmärkte bereits ab € 250 zugänglich für
                 jeden Vermögensverwaltungskunden.
               </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="section">
+        <div className="row">
+          <div>
+            <h4 className="center-align" style={{ paddingBottom: "70px" }}>
+              Unsere exklusiven Kooperationspartner
+            </h4>
+            <div className="row">
+              <ul className="tabs tabs-fixed-width tab-demo">
+                <li className="tab">
+                  <a
+                    href="https://www.artbnk.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/Artbnk.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab">
+                  <a
+                    href="https://www.ev-smartmoney.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/E&VSmartMoney.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab">
+                  <a
+                    href="https://www.econos.green/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "120%" }}
+                      src={`${window.location.origin}/images/products/econos.jpg`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab">
+                  <a
+                    href="https://www.inventure.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/inVenture.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab">
+                  <a
+                    href="https://www.arttrade.io/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "120%" }}
+                      src={`${window.location.origin}/images/products/Arttrade.jpg`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab">
+                  <a
+                    href="https://www.coinpanion.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/Coinpanion.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab">
+                  <a
+                    href="https://www.dealcircle.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/Dealcircle.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

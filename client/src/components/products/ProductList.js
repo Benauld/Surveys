@@ -47,11 +47,12 @@ class ProductList extends Component {
         <div key={product.Name}>
           {this.renderSection(product)}
           <div className="col s12 m6 l3">
-            <div className="card">
+            <div className="card large">
               <div>{this.renderCardHeader(product.Status)}</div>
-              <div className="card-image" style={{ minHeight: "125px" }}>
+              <div className="card-image">
                 <img
                   className="responsive-img"
+                  style={{ maxHeight: "250px" }}
                   src={image}
                   alt={product.Name}
                 />
