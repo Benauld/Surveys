@@ -121,21 +121,7 @@ const Landing = () => {
                 className="tabs tabs-fixed-width"
                 style={{ paddingBottom: "100px" }}
               >
-                <li className="tab" style={{ minWidth: "200px" }}>
-                  <a
-                    href="https://www.artbnk.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      className="responsive-img"
-                      style={{ height: "100%" }}
-                      src={`${window.location.origin}/images/products/Artbnk.png`}
-                      alt="X-altd"
-                    />
-                  </a>
-                </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
+                <li className="tab" style={{ minWidth: "250px" }}>
                   <a
                     href="https://www.ev-smartmoney.com/"
                     target="_blank"
@@ -149,21 +135,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
-                  <a
-                    href="https://www.econos.green/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      className="responsive-img"
-                      style={{ height: "120%" }}
-                      src={`${window.location.origin}/images/products/econos.jpg`}
-                      alt="X-altd"
-                    />
-                  </a>
-                </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
+                <li className="tab" style={{ minWidth: "250px" }}>
                   <a
                     href="https://www.inventure.com/"
                     target="_blank"
@@ -177,49 +149,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
-                  <a
-                    href="https://www.arttrade.io/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      className="responsive-img"
-                      style={{ height: "120%" }}
-                      src={`${window.location.origin}/images/products/Arttrade.jpg`}
-                      alt="X-altd"
-                    />
-                  </a>
-                </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
-                  <a
-                    href="https://www.coinpanion.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      className="responsive-img"
-                      style={{ height: "100%" }}
-                      src={`${window.location.origin}/images/products/Coinpanion.png`}
-                      alt="X-altd"
-                    />
-                  </a>
-                </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
-                  <a
-                    href="https://www.dealcircle.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <img
-                      className="responsive-img"
-                      style={{ height: "100%" }}
-                      src={`${window.location.origin}/images/products/Dealcircle.png`}
-                      alt="X-altd"
-                    />
-                  </a>
-                </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
+                <li className="tab" style={{ minWidth: "250px" }}>
                   <a
                     href="https://tokenstreet.com/"
                     target="_blank"
@@ -233,7 +163,80 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab" style={{ minWidth: "200px" }}>
+                <li className="tab" style={{ minWidth: "250px" }}>
+                  <a
+                    href="https://www.econos.green/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "120%" }}
+                      src={`${window.location.origin}/images/products/econos.jpg`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab" style={{ minWidth: "250px" }}>
+                  <a
+                    href="https://www.coinpanion.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/Coinpanion.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab" style={{ minWidth: "250px" }}>
+                  <a
+                    href="https://www.artbnk.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/Artbnk.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+
+                <li className="tab" style={{ minWidth: "250px" }}>
+                  <a
+                    href="https://www.arttrade.io/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "120%" }}
+                      src={`${window.location.origin}/images/products/Arttrade.jpg`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+
+                <li className="tab" style={{ minWidth: "250px" }}>
+                  <a
+                    href="https://www.dealcircle.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/Dealcircle.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+
+                <li className="tab" style={{ minWidth: "250px" }}>
                   <a
                     href="https://nftrust.io/"
                     target="_blank"
