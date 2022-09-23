@@ -221,7 +221,7 @@ const Landing = () => {
                 </li>
                 <li className="tab" style={{ minWidth: "200px" }}>
                   <a
-                    href="https://nftrust.io/"
+                    href="https://tokenstreet.com/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
