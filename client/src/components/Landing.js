@@ -228,7 +228,7 @@ const Landing = () => {
                     <img
                       className="responsive-img"
                       style={{ height: "100%" }}
-                      src={`${window.location.origin}/images/products/tokenstreet.jpeg`}
+                      src={`${window.location.origin}/images/products/Tokenstreet.jpeg`}
                       alt="X-altd"
                     />
                   </a>
