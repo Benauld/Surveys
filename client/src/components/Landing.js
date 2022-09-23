@@ -31,14 +31,14 @@ const Landing = () => {
       <div className="section">
         <div className="container">
           <div className="row" style={{ minHeight: "200px" }}>
-            <div className="col s6 m4 l4">
+            <div className="col s12 m6 l4">
               <div className="card" style={{ minHeight: "200px" }}>
                 <div className="section"></div>
                 <div className="card-title center" style={{ color: "#b48c5c" }}>
                   <i className="large material-icons">visibility</i>
                 </div>
                 <div className="card-title center">
-                  <h4>Produktzugang</h4>
+                  <h5>Produktzugang</h5>
                 </div>
                 <div
                   className="card-content center"
@@ -49,14 +49,14 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="col s6 m4 l4">
+            <div className="col s12 m6 l4">
               <div className="card" style={{ minHeight: "200px" }}>
                 <div className="section"></div>
                 <div className="card-title center" style={{ color: "#b48c5c" }}>
                   <i className="large material-icons">vpn_key</i>
                 </div>
                 <div className="card-title center">
-                  <h4>Compliance </h4>
+                  <h5>Compliance </h5>
                 </div>
                 <div
                   className="card-content center"
@@ -67,14 +67,14 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="col s6 m4 l4">
+            <div className="col s12 m6 l4">
               <div className="card" style={{ minHeight: "200px" }}>
                 <div className="section"></div>
                 <div className="card-title center" style={{ color: "#b48c5c" }}>
                   <i className="large material-icons">flash_on</i>
                 </div>
                 <div className="card-title center">
-                  <h4>Beratungseffizienz</h4>
+                  <h5>Beratungseffizienz</h5>
                 </div>
                 <div
                   className="card-content center"
@@ -117,8 +117,11 @@ const Landing = () => {
               Unsere exklusiven Kooperationspartner
             </h4>
             <div className="row">
-              <ul className="tabs tabs-fixed-width tab-demo">
-                <li className="tab">
+              <ul
+                className="tabs tabs-fixed-width"
+                style={{ paddingBottom: "100px" }}
+              >
+                <li className="tab" style={{ minWidth: "200px" }}>
                   <a
                     href="https://www.artbnk.com/"
                     target="_blank"
@@ -132,7 +135,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab">
+                <li className="tab" style={{ minWidth: "200px" }}>
                   <a
                     href="https://www.ev-smartmoney.com/"
                     target="_blank"
@@ -146,7 +149,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab">
+                <li className="tab" style={{ minWidth: "200px" }}>
                   <a
                     href="https://www.econos.green/"
                     target="_blank"
@@ -160,7 +163,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab">
+                <li className="tab" style={{ minWidth: "200px" }}>
                   <a
                     href="https://www.inventure.com/"
                     target="_blank"
@@ -174,7 +177,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab">
+                <li className="tab" style={{ minWidth: "200px" }}>
                   <a
                     href="https://www.arttrade.io/"
                     target="_blank"
@@ -188,7 +191,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab">
+                <li className="tab" style={{ minWidth: "200px" }}>
                   <a
                     href="https://www.coinpanion.com/"
                     target="_blank"
@@ -202,7 +205,7 @@ const Landing = () => {
                     />
                   </a>
                 </li>
-                <li className="tab">
+                <li className="tab" style={{ minWidth: "200px" }}>
                   <a
                     href="https://www.dealcircle.com/"
                     target="_blank"
@@ -212,6 +215,34 @@ const Landing = () => {
                       className="responsive-img"
                       style={{ height: "100%" }}
                       src={`${window.location.origin}/images/products/Dealcircle.png`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab" style={{ minWidth: "200px" }}>
+                  <a
+                    href="https://nftrust.io/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/tokenstreet.jpeg`}
+                      alt="X-altd"
+                    />
+                  </a>
+                </li>
+                <li className="tab" style={{ minWidth: "200px" }}>
+                  <a
+                    href="https://nftrust.io/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      className="responsive-img"
+                      style={{ height: "100%" }}
+                      src={`${window.location.origin}/images/products/nftrust.jpeg`}
                       alt="X-altd"
                     />
                   </a>
