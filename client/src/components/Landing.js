@@ -1,38 +1,40 @@
 import React from "react";
+import forestbackground from "./forestbackground.jpg";
 
 const Landing = () => {
   return (
     <div>
-      <div className="section teal darken-4">
-        <div className="row valign-wrapper">
-          <div className="col s12 m6 l6 green-text text-lighten-5">
+      <div
+        className="section"
+        style={{
+          backgroundImage: `url(${forestbackground})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "1000px",
+        }}
+      >
+        <div
+          className="row left valign-wrapper"
+          style={{ marginTop: "200px", marginLeft: "40px" }}
+        >
+          <div className="col s12 m12 l12 green-text text-lighten-5">
             <h1 className="center-align">X-altd Assets</h1>
             <h4 className="center-align">
               Exklusive Privatmarktinvestments für Ihre Kunden
             </h4>
           </div>
-          <div className="col s12 m6 l6">
-            <img
-              className="responsive-img right"
-              src={`${window.location.origin}/images/screenshot.jpg`}
-              alt="X-altd"
-            />
-          </div>
         </div>
       </div>
-      <div>
-        <img
-          className="responsive-img"
-          style={{ width: "100%" }}
-          src={`${window.location.origin}/images/triangle.jpg`}
-          alt="X-altd"
-        />
-      </div>
+
       <div className="section">
         <div className="container">
-          <div className="row" style={{ minHeight: "200px" }}>
+          <div
+            className="row"
+            style={{ minHeight: "450px", marginTop: "150px" }}
+          >
             <div className="col s12 m6 l4">
-              <div className="card" style={{ minHeight: "200px" }}>
+              <div className="card hoverable" style={{ minHeight: "200px" }}>
                 <div className="section"></div>
                 <div className="card-title center" style={{ color: "#b48c5c" }}>
                   <i className="large material-icons">visibility</i>
@@ -50,7 +52,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="col s12 m6 l4">
-              <div className="card" style={{ minHeight: "200px" }}>
+              <div className="card hoverable" style={{ minHeight: "200px" }}>
                 <div className="section"></div>
                 <div className="card-title center" style={{ color: "#b48c5c" }}>
                   <i className="large material-icons">vpn_key</i>
@@ -68,7 +70,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="col s12 m6 l4">
-              <div className="card" style={{ minHeight: "200px" }}>
+              <div className="card hoverable" style={{ minHeight: "200px" }}>
                 <div className="section"></div>
                 <div className="card-title center" style={{ color: "#b48c5c" }}>
                   <i className="large material-icons">flash_on</i>
