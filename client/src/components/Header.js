@@ -50,8 +50,8 @@ class Header extends Component {
             <img
               className="brand-logo"
               style={{ width: "170px", height: "auto", marginLeft: "16px" }}
-              src={`${window.location.origin}/images/Logo_orig_transparent.png`}
-              alt="X-altd"
+              src={`${window.location.origin}/images/Kaptransparentlong.png`}
+              alt="Kapnative"
             />
           </Link>
           <ul id="nav-mobile" className="right">

@@ -19,7 +19,14 @@ const Landing = () => {
           style={{ marginTop: "200px", marginLeft: "40px" }}
         >
           <div className="col s12 m12 l12 green-text text-lighten-5">
-            <h1 className="center-align">X-altd Assets</h1>
+            <h1 className="center-align">
+              <img
+                className="brand-logo"
+                style={{ width: "500px", height: "auto", marginLeft: "16px" }}
+                src={`${window.location.origin}/images/Kaptransparentlong.png`}
+                alt="Kapnative"
+              />
+            </h1>
             <h4 className="center-align">
               Exklusive Privatmarktinvestments für Ihre Kunden
             </h4>
@@ -98,13 +105,13 @@ const Landing = () => {
             <div className="green-text text-lighten-5">
               <h2 className="center-align">Über Uns</h2>
               <h5 className="center-align" style={{ textAlign: "justify" }}>
-                X-altd ist der digitale Marktplatz für Investments in
+                KapNative ist der digitale Marktplatz für Investments in
                 Privatmärkte für Vermögensverwaltungen und deren Kunden. Neben
                 einem digitalen, compliance sicheren Zeichnungsprozess hat sich
-                X-altd als unabhängiger Marktplatz das Ziel gesetzt, die
+                KapNative als unabhängiger Marktplatz das Ziel gesetzt, die
                 führenden Produktanbieter im alternativen Investmentbereich
-                transparent zugänglich zu machen. X-altd macht hierbei durch die
-                enge Zusammenarbeit mit seinen Kooperationspartner das
+                transparent zugänglich zu machen. KapNative macht hierbei durch
+                die enge Zusammenarbeit mit seinen Kooperationspartner das
                 Investieren in Privatmärkte bereits ab € 250 zugänglich für
                 jeden Vermögensverwaltungskunden.
               </h5>

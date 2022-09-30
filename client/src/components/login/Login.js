@@ -14,8 +14,8 @@ const Login = () => {
         <div className="section center">
           <img
             className="responsive-img center"
-            style={{ width: "250px" }}
-            src={`${window.location.origin}/images/Logo_Black_Transparent.png`}
+            style={{ width: "300px" }}
+            src={`${window.location.origin}/images/KapOriginal.png`}
             alt="X-altd"
           />
         </div>

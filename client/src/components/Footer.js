@@ -9,7 +9,7 @@ class Footer extends Component {
             <div className="col l6 s12">
               <h5 className="grey-text text-darken-4">Addresse</h5>
               <div className="grey-text text-darken-4">
-                <p>X-altd Assets GmbH</p>
+                <p>KapNative GmbH</p>
                 <p>Brandswiete 4.</p>
                 <p>20457 Hamburg</p>
               </div>
@@ -20,7 +20,7 @@ class Footer extends Component {
                 <p>Tel.Nr.: +49 176 32509287</p>
                 <p></p>
                 <a href="mailto:contact@x-altd.com">
-                  <p>E-Mail: contact@x-altd.com</p>
+                  <p>E-Mail: contact@KapNative.com</p>
                 </a>
               </div>
             </div>
@@ -28,7 +28,7 @@ class Footer extends Component {
         </div>
         <div className="footer-copyright">
           <div className="container grey-text text-darken-4">
-            © 2023 by X-altd Assets GmbH
+            © 2023 by KapNative GmbH
             <a className="grey-text text-darken-4 right" href="#!"></a>
           </div>
         </div>
