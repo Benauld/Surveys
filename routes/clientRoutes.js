@@ -14,4 +14,23 @@ module.exports = (app) => {
     if (!clients) res.send("no client exists with given id");
     res.send(clients);
   });
+  app.post("/api/clients", requireLogin, async (req, res) => {
+    const { title, forname, middlename, surname, image, email, nationality } =
+      req.body;
+
+    const client = await Client.create({
+      title: title,
+      forname: forname,
+      middlename: middlename,
+      surname: surname,
+      image: "noImage.jpg",
+      email: email,
+      status: "Created",
+      nationality: nationality,
+      advisor: req.user._id,
+      dateCreated: Date.now(),
+      lastUpdated: Date.now(),
+    });
+    res.send(client);
+  });
 };

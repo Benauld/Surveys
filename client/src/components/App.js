@@ -10,6 +10,7 @@ import Marketplace from "./Marketplace";
 import SurveyNew from "./surveys/SurveyNew";
 import Product from "./products/ProductDetail";
 import Kunden from "./Kunden";
+import ClientNew from "./clients/ClientNew";
 import Login from "./login/Login";
 class App extends Component {
   componentDidMount() {
@@ -27,6 +28,7 @@ class App extends Component {
             <Route exact path="/kunden" component={Kunden} />
             <Route exact path="/market/:id" component={Product} />
             <Route path="/surveys/new" component={SurveyNew} />
+            <Route path="/kunden/new" component={ClientNew} />
             <Route path="/login" component={Login} />
             <Footer />
           </div>

@@ -27,7 +27,7 @@ class ClientList extends Component {
     return this.props.clients.reverse().map((client) => {
       const image = window.location.origin + "/images/clients/" + client.image;
       return (
-        <div key={client.surname}>
+        <div key={client.email}>
           <div className="col s12 m6 l3">
             <div className="card">
               <div>{this.renderCardHeader(client.status)}</div>

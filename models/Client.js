@@ -8,8 +8,10 @@ const clientSchema = new Schema({
   surname: String,
   image: String,
   email: String,
+  mobile: String,
   status: String,
-  _user: { type: Schema.Types.ObjectId, ref: "advisor" },
+  nationality: String,
+  advisor: String,
   dateCreated: Date,
   lastUpdated: Date,
 });

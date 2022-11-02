@@ -4,3 +4,6 @@ export const FETCH_PRODUCTS = "fetch_products";
 export const FETCH_PRODUCT = "fetch_product";
 export const FETCH_CLIENTS = "fetch_clients";
 export const FETCH_CLIENT = "fetch_client";
+export const CREATE_CLIENT = "create_client";
+export const EDIT_CLIENT = "edit_client";
+export const DELETE_CLIENT = "delete_client";

@@ -6,6 +6,9 @@ import {
   FETCH_PRODUCT,
   FETCH_CLIENTS,
   FETCH_CLIENT,
+  CREATE_CLIENT,
+  EDIT_CLIENT,
+  DELETE_CLIENT,
 } from "./types";
 
 export const fetchUser = () => async (dispatch) => {
@@ -48,4 +51,19 @@ export const fetchClients = () => async (dispatch) => {
 export const fetchClient = (id) => async (dispatch) => {
   const res = await axios.get(`/api/clients/${id}`);
   dispatch({ type: FETCH_CLIENT, payload: res.data });
+};
+
+export const createClient = (formValues) => async (dispatch) => {
+  const res = await axios.post("/api/clients", formValues);
+  dispatch({ type: CREATE_CLIENT, payload: res.data });
+};
+
+export const editClient = (id, formValues) => async (dispatch) => {
+  const res = await axios.put(`/api/clients/${id}`, formValues);
+  dispatch({ type: EDIT_CLIENT, payload: res.data });
+};
+
+export const deleteClient = (id) => async (dispatch) => {
+  await axios.delete(`/api/clients/${id}`);
+  dispatch({ type: DELETE_CLIENT, payload: id });
 };
