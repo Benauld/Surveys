@@ -7,3 +7,5 @@ export const FETCH_CLIENT = "fetch_client";
 export const CREATE_CLIENT = "create_client";
 export const EDIT_CLIENT = "edit_client";
 export const DELETE_CLIENT = "delete_client";
+export const LOG_ERROR = "log_error";
+export const CLEAR_ERROR = "clear_error";

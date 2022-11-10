@@ -1,36 +1,20 @@
 import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
-import { createClient } from "../../actions";
-import DropdownList from "react-widgets/DropdownList";
+import { createClient, clearError } from "../../actions";
+
+import renderInput from "../formHelpers/renderInput";
+import renderDropdownList from "../formHelpers/renderDropdownList";
 
 class ClientNew extends Component {
-  renderError({ error, touched }) {
-    if (touched && error) {
-      return <div className="red-text">{error}</div>;
+  renderServerError() {
+    if (this.props.errors !== "") {
+      return <div className="red-text">{this.props.errors.data.error}</div>;
     }
   }
-  renderInput = ({ input, label, meta, type }) => {
-    return (
-      <div className="field col s3 m3 l6">
-        <label>{label}</label>
-        <input {...input} autoComplete="on" type={type} />
-        {this.renderError(meta)}
-      </div>
-    );
-  };
-  renderDropdownList = ({ label, meta, defaultValue, data }) => {
-    return (
-      <div className="col s3 m3 l6">
-        <label>{label}</label>
-        <DropdownList defaultValue={defaultValue} data={data} />
-        {this.renderError(meta)}
-      </div>
-    );
-  };
 
   onSubmit = (formValues) => {
-    console.log(formValues);
+    this.props.clearError();
     this.props.createClient(formValues);
   };
   render() {
@@ -43,7 +27,6 @@ class ClientNew extends Component {
           <Field
             name="title"
             label="Titel"
-            component={this.renderDropdownList}
             defaultValue="Herr"
             data={[
               "Herr",
@@ -53,32 +36,33 @@ class ClientNew extends Component {
               "Profesorin",
               "Fraulein",
             ]}
+            component={renderDropdownList}
           />
         </div>
         <Field
           name="forname"
           type="text"
-          component={this.renderInput}
+          component={renderInput}
           label="Vorname"
         />
         <Field
           name="surname"
           type="text"
-          component={this.renderInput}
+          component={renderInput}
           label="Nachname"
         />
         <Field
           name="email"
-          component={this.renderInput}
+          component={renderInput}
           label="Email"
           type="email"
         />
-        <Field name="mobile" component={this.renderInput} label="Handy" />
-
+        <Field name="mobile" component={renderInput} label="Handy" />
         <button className="btn waves-effect waves-light">
           Submit
           <i className="material-icons right">send</i>
         </button>
+        <div>{this.renderServerError()}</div>
       </form>
     );
   }
@@ -109,12 +93,22 @@ const validate = (formValues) => {
   return errors;
 };
 
+//const asyncValidate = (formValues, dispatch) => {
+//  const errors = {};
+//  if (formValues.email) {
+//    errors.email = "You must enter an email";
+//  }
+//
+//  return errors;
+//};
 const formWrapped = reduxForm({
   form: "createClient",
   validate,
 })(ClientNew);
 
-function mapStateToProps({ auth }) {
-  return { auth };
+function mapStateToProps({ auth, clients, errors }) {
+  return { auth, clients, errors };
 }
-export default connect(mapStateToProps, { createClient })(formWrapped);
+export default connect(mapStateToProps, { createClient, clearError })(
+  formWrapped
+);

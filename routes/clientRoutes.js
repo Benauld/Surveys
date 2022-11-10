@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Client = mongoose.model("clients");
 const requireLogin = require("../middlewares/requireLogin");
+const validateClient = require("../middlewares/validateClient");
 
 module.exports = (app) => {
   app.get("/api/clients/:id", requireLogin, async (req, res) => {
@@ -14,7 +15,7 @@ module.exports = (app) => {
     if (!clients) res.send("no client exists with given id");
     res.send(clients);
   });
-  app.post("/api/clients", requireLogin, async (req, res) => {
+  app.post("/api/clients", requireLogin, validateClient, async (req, res) => {
     const { title, forname, middlename, surname, image, email, nationality } =
       req.body;
 

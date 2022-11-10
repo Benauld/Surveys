@@ -9,6 +9,8 @@ import {
   CREATE_CLIENT,
   EDIT_CLIENT,
   DELETE_CLIENT,
+  LOG_ERROR,
+  CLEAR_ERROR,
 } from "./types";
 
 export const fetchUser = () => async (dispatch) => {
@@ -54,8 +56,12 @@ export const fetchClient = (id) => async (dispatch) => {
 };
 
 export const createClient = (formValues) => async (dispatch) => {
-  const res = await axios.post("/api/clients", formValues);
-  dispatch({ type: CREATE_CLIENT, payload: res.data });
+  try {
+    const res = await axios.post("/api/clients", formValues);
+    dispatch({ type: CREATE_CLIENT, payload: res.data });
+  } catch (err) {
+    dispatch({ type: LOG_ERROR, payload: err.response });
+  }
 };
 
 export const editClient = (id, formValues) => async (dispatch) => {
@@ -66,4 +72,8 @@ export const editClient = (id, formValues) => async (dispatch) => {
 export const deleteClient = (id) => async (dispatch) => {
   await axios.delete(`/api/clients/${id}`);
   dispatch({ type: DELETE_CLIENT, payload: id });
+};
+
+export const clearError = () => (dispatch) => {
+  dispatch({ type: CLEAR_ERROR });
 };
